@@ -48,6 +48,21 @@
                         }
                     </script>
           </div>
+ <!-- Hamburger Icon -->
+  <div class="menu-icon" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <nav class="menu">
+    <ul>
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="about.html"> About</a></li>
+      <li><a href="shop.html"> Store</a></li>
+      <li><a href="contact.html"> Contact</a></li>
+    </ul>
+  </nav>
+
           <div class="main-nav d-none d-lg-block">
             <nav class="site-navigation text-right text-md-center" role="navigation">
               <ul class="site-menu js-clone-nav d-none d-lg-block">
@@ -148,14 +163,22 @@
       
           </div>
         </div>
-        <div class="row mt-5">
+       <div class="row mt-5">
           <div class="col-md-12 text-center">
             <div class="site-block-27">
             <div class="pagination">
-                   <button class="page-btn">&lt;</button>
-                   <button class="page-btn active">1</button>
-                   <button class="page-btn">2</button>
-                   <button class="page-btn">&gt;</button>
+                   <button class="page-btn" onclick="goPage1()">&lt;</button>
+                   <a href="shop.html" class="page-btn active"  onclick="goPage()">1</a>
+                   <a href="shop1.html" class="page-btn"  onclick="goPage()">2</a>
+                   <button class="page-btn" onclick="goPage2()">&gt;</button>
+                   <script>
+                      function goPage1() {
+                        window.location.href = "shop.html"; // redirect to homepage
+                        }
+                          function goPage2() {
+                        window.location.href = "shop1.html"; // redirect to homepage
+                        }
+                    </script>
            </div>
 
             </div>
@@ -225,7 +248,7 @@
   <script src="js/aos.js"></script>
 
   <script src="js/main.js"></script>
-
+  <script src="js/script.js"></script>
 </body>
 
 </html>

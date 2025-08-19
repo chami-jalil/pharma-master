@@ -41,15 +41,14 @@
       <div class="container">
         <div class="d-flex align-items-center justify-content-between">
           <div class="logo">
-                <img class="medlogo" src="images/pics/img_logo.jpeg" alt="logo" onclick="goHome()" />
+            <img class="medlogo" src="images/pics/img_logo.jpeg" alt="logo" onclick="goHome()" />
                     <script>
                       function goHome() {
                         window.location.href = "index.html"; // redirect to homepage
                         }
                     </script>
           </div>
-
-           <!-- Hamburger Icon -->
+ <!-- Hamburger Icon -->
   <div class="menu-icon" onclick="toggleMenu()">
     <span></span>
     <span></span>
@@ -63,11 +62,12 @@
       <li><a href="contact.html"> Contact</a></li>
     </ul>
   </nav>
+
           <div class="main-nav d-none d-lg-block">
             <nav class="site-navigation text-right text-md-center" role="navigation">
               <ul class="site-menu js-clone-nav d-none d-lg-block">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="shop.html">Store</a></li>
+                <li class="active"><a href="shop.html">Store</a></li>
                 <li class="has-children">
                   <a href="#">Dropdown</a>
                   <ul class="dropdown">
@@ -87,7 +87,7 @@
                   </ul>
                 </li>
                 <li><a href="about.html">About</a></li>
-                <li class="active"><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
               </ul>
             </nav>
           </div>
@@ -98,25 +98,95 @@
     <div class="bg-light py-3">
       <div class="container">
         <div class="row">
-          <div class="col-md-12 mb-0"><a href="index.html">Home</a> <span class="mx-2 mb-0">/</span> <strong
-              class="text-black">Thank You</strong></div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="site-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <span class="icon-check_circle display-3 text-success"></span>
-            <h2 class="display-3 text-black">Thank you!</h2>
-            <p class="lead mb-5">You order was successfuly completed.</p>
-            <p><a href="shop.html" class="btn btn-md height-auto px-4 py-3 btn-primary">Back to store</a></p>
-          </div>
+          <div class="col-md-12 mb-0"><a href="index.html">Home</a> <span class="mx-2 mb-0">/</span> <strong class="text-black">Store</strong></div>
         </div>
       </div>
     </div>
 
+    <div class="site-section">
+      <div class="container">
+        
+
+        <div class="row">
+        
+     <div class="col-sm-6 col-lg-4 text-center item mb-3">
+         
+          <img src="images/pics/Asset 7.svg" alt="Image">
+       
+          </div>
+
+          <div class="col-sm-6 col-lg-4 text-center item mb-4">
+         <img src="images/pics/Asset 10.svg" alt="Image">
+       
+          </div>
+          <div class="col-sm-6 col-lg-4 text-center item mb-4">
+       <img src="images/pics/Asset 11.svg" alt="Image">
+          
+          </div>
+    
+          <div class="col-sm-6 col-lg-4 text-center item mb-4">
+            <img src="images/pics/Asset 16.svg" alt="Image">
+         
+          </div>
+
+          <div class="col-sm-6 col-lg-4 text-center item mb-4">
+            <img src="images/pics/Asset 17.svg" alt="Image">
+   
+          </div>
+          <div class="col-sm-6 col-lg-4 text-center item mb-4">
+          <img src="images/pics/Asset 18.svg" alt="Image">
+       
+          </div>
+
+          <div class="col-sm-6 col-lg-4 text-center item mb-4">
+            <img src="images/pics/Asset 19.svg" alt="Image">
+          </div>
+
+          <div class="col-sm-6 col-lg-4 text-center item mb-4">
+           <img src="images/pics/Asset 9.svg" alt="Image">
+          </div>
+
+          <div class="col-sm-6 col-lg-4 text-center item mb-4">
+            <img src="images/pics/Asset 14.svg" alt="Image">
+          </div>
+          
+          <div class="col-sm-6 col-lg-4 text-center item mb-4">
+         <img src="images/pics/Asset 15.svg" alt="Image">
+         
+          </div>
+          <div class="col-sm-6 col-lg-4 text-center item mb-4">
+            <img src="images/pics/Asset 12.svg" alt="Image">
+    
+          </div>
+          <div class="col-sm-6 col-lg-4 text-center item mb-4">
+           <img src="images/pics/Asset 13.svg" alt="Image">
+      
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-12 text-center">
+            <div class="site-block-27">
+            <div class="pagination">
+                   <button class="page-btn" onclick="goPage1()">&lt;</button>
+                   <a href="shop.html" class="page-btn active"  onclick="goPage()">1</a>
+                   <a href="shop1.html" class="page-btn"  onclick="goPage()">2</a>
+                   <button class="page-btn" onclick="goPage2()">&gt;</button>
+                   <script>
+                      function goPage1() {
+                        window.location.href = "shop.html"; // redirect to homepage
+                        }
+                          function goPage2() {
+                        window.location.href = "shop1.html"; // redirect to homepage
+                        }
+                    </script>
+           </div>
+
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
 
     <footer class="site-footer">
       <div class="container">
@@ -140,11 +210,11 @@
             </ul>
           </div>
 
-          <div class="col-md-6 col-lg-3">
+           <div class="col-md-6 col-lg-3">
             <div class="block-5 mb-5">
               <h3 class="footer-heading mb-4">Contact Info</h3>
               <ul class="list-unstyled" >
-               <li class="address" style="color: white;">1270-Gali Number 58,Falz Road,New Delhi-110005</li>
+                <li class="address" style="color: white;">1270-Gali Number 58,Falz Road,New Delhi-110005</li>
                 <li class="email" style="color: white;">medlandcorporation@gmail.com</li>
               </ul>
             </div>
