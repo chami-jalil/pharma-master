@@ -1708,7 +1708,7 @@ body {
 }
 
 .site-section {
-  /* width: 80%; */
+  width: 100%;
   margin-bottom: 50px;
   padding: 30px 20px;
   border-radius: 5px;
@@ -1746,8 +1746,13 @@ body {
   align-items: center;
 }
 
+
+.page-btn:hover{
+background-color: #4cafef;
+}
+
 .page-btn {
-  background: white;
+  /* background: white; */
   border: 1px solid #ccc;
   border-radius: 50%;
   width: 40px;
@@ -1757,17 +1762,12 @@ body {
   font-size: 16px;
 }
 
-.page-btn.active {
-  background: white;
-  color: black;
-}
-
 /* mobile view */
 
 /* Default (Desktop) */
 .container {
-  width: 90%;
-  max-width: 1200px;
+  width: 100%;
+  max-width: 1500px;
   margin: auto;
 }
 
