@@ -1470,6 +1470,25 @@ body {
   margin-top: 100px;
 }
 
+/* Tablet view (≤1024px) */
+@media (max-width: 1024px) {
+  .block-16 {
+    width: 90%;           /* shrink width */
+    margin-left: auto;    /* center horizontally */
+    margin-right: auto;
+  }
+}
+
+/* Mobile view (≤768px) */
+@media (max-width: 768px) {
+  .block-16 {
+    width: 95%;           /* almost full width */
+    margin: 20px auto;    /* center with top/bottom margin */
+    padding: 15px;        /* reduce padding */
+  }
+}
+
+
 .block-16:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
@@ -1541,9 +1560,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-left: 100px;
-  /* gap: 20px; */
   flex-wrap: wrap;
-  /* padding: 20px; */
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.08);
@@ -1563,16 +1580,15 @@ body {
   filter: grayscale(0%) contrast(110%);
 }
 
-/* Responsive */
+/* Mobile view (<=768px) */
 @media (max-width: 768px) {
-  .cert-logo {
-    height: 60px;
-  }
-}
-
-@media (max-width: 480px) {
-  .cert-logo {
-    height: 50px;
+  .cert-logos {
+    width: 100%;              /* full width on mobile */
+    margin-left: 0;           /* remove left margin */
+    height: auto;             /* adjust height */
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
