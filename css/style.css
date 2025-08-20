@@ -1301,17 +1301,7 @@ body {
   padding: 0;
 }
 
-.about-container {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  max-width: 1200px;
-  margin-left: 500px;
-  margin: 0 auto;
-  background: #fff;
-  box-shadow: 0 0 10px #ccc;
-  min-height: 700px;
-}
+
 
 .left-panel, .right-panel {
   width: 50%;
@@ -1422,42 +1412,6 @@ body {
   top: 370px;
 }
 
-@media (max-width: 900px) {
-  .about-container {
-    flex-direction: column;
-    min-width: unset;
-  }
-  .left-panel, .right-panel {
-    width: 100%;
-    padding: 18px;
-  }
-  .person-image-left, .person-image-right {
-    position: static;
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  .corner-decor {
-    display: none;
-  }
-}
-
-
-/* .footer-heading {
-  text-align: center;
-  color: white;
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 1.5rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
-}
-
-.footer-heading.mb-4 {
-  margin-bottom: 2rem;
-} */
-
 
 .block-16 {
   margin-left: 100px;
@@ -1470,19 +1424,12 @@ body {
   margin-top: 100px;
 }
 
-/* Tablet view (≤1024px) */
-@media (max-width: 1024px) {
-  .block-16 {
-    width: 90%;           /* shrink width */
-    margin-left: auto;    /* center horizontally */
-    margin-right: auto;
-  }
-}
+
 
 /* Mobile view (≤768px) */
 @media (max-width: 768px) {
   .block-16 {
-    width: 95%;           /* almost full width */
+    width: 100%;           /* almost full width */
     margin: 20px auto;    /* center with top/bottom margin */
     padding: 15px;        /* reduce padding */
   }
@@ -1779,22 +1726,6 @@ background-color: #4cafef;
   font-size: 16px;
 }
 
-/* mobile view */
-
-/* Default (Desktop) */
-.container {
-  width: 100%;
-  max-width: 1500px;
-  margin: auto;
-}
-
-
-/* Tablet */
-/* @media (max-width: 768px) {
-  .container {
-    width: 90%;
-  }
-} */
 
 /* Mobile */
 @media (max-width: 400px) {
@@ -1803,7 +1734,7 @@ background-color: #4cafef;
     padding: 10px;
     font-size: 14px;
       width: 100vw;  /* full screen width */
-  height: 100vh; /* full screen height */
+
   }
 }
 
