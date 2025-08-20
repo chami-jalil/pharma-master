@@ -1559,7 +1559,7 @@ body {
   width: 1000px;
   justify-content: center;
   align-items: center;
-  margin-left: 100px;
+  margin-left: 250px;
   flex-wrap: wrap;
   background: #fff;
   border-radius: 12px;
@@ -1575,10 +1575,7 @@ body {
   cursor: pointer;
 }
 
-.cert-logo:hover {
-  transform: scale(1.1);
-  filter: grayscale(0%) contrast(110%);
-}
+
 
 /* Mobile view (<=768px) */
 @media (max-width: 768px) {
@@ -1590,6 +1587,10 @@ body {
     flex-wrap: wrap;
     justify-content: center;
   }
+  .cert-logo:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%) contrast(110%);
+}
 }
 
  /* ===== Footer Styles ===== */
@@ -1821,7 +1822,7 @@ body {
 .menu-icon {
   width: 30px;
   cursor: pointer;
-  margin-right: 250px;
+  margin-right: 300px;
   z-index: 1000;
   position: relative;
   transition: transform 0.3s ease; 
@@ -1852,6 +1853,34 @@ body {
     margin: 5px 0;
     border-radius: 2px;
     transition: all 0.4s ease;
+  }
+    /* Dropdown menu (hidden by default) */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #333;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 200px;
+    padding: 15px;
+    border-radius: 8px;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+    list-style: none;
+  }
+
+  .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+    .menu-icon:hover + .nav-links,
+  .nav-links:hover {
+    display: flex;
   }
 }
 
