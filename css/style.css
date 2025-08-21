@@ -1752,7 +1752,7 @@ body {
 .menu-icon {
   width: 30px;
   cursor: pointer;
-  margin-right: 50px;
+  margin-right: 100px;
   z-index: 1000;
   position: relative;
   transition: transform 0.3s ease; 
@@ -1818,8 +1818,8 @@ body {
 /* Navigation Menu (hidden by default) */
 .menu {
   /* background: #bddef4; */
-    background: rgba(255, 255, 255, 0.15); /* Transparent white */
-    backdrop-filter: blur(10px); /* Frosted glass blur */
+  background: rgba(255, 255, 255, 0.15); /* Transparent white */
+  backdrop-filter: blur(10px); /* Frosted glass blur */
   -webkit-backdrop-filter: blur(10px); /* For Safari */
   position: absolute;
   top: 60px;
